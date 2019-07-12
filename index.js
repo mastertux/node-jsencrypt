@@ -2135,8 +2135,6 @@ ASN1.test = function () {
         rng_pool = new Array();
         rng_pptr = 0;
         var t;
-        var crypto = require("crypto");
-
         // Extract entropy (2048 bits) from RNG if available
         var z = new Uint8Array(256);
         getRandomValues(z);
